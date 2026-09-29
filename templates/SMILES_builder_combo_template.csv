@@ -1,0 +1,2 @@
+Combo,Formula,Core_ID,A_SMILES,B_SMILES,C_SMILES,CORE_SMILES,Product_SMILES
+"A#1:A1:N | B#1:B1:C6H5 | C#1:C1:O",C8H11NO,CORE-1,N[*:1],c1ccccc1[*:2],O[*:3],[*:1]C([*:2])([*:3])C,

@@ -1,0 +1,2 @@
+CombiTrace-MS 18.48.2-en.1
+Based on analysis and workbook layout version 18.48.2.

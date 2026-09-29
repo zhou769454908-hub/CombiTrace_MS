@@ -1,0 +1,19 @@
+﻿Channel_ID,Display,Category,Exact_Delta_From_MH_Da,Source_Hypothesis,Priority_Stars,Default_Action,Quantifiable,Formula_Element_Required,Support_Channel_ID,Note
+FORMATE,[M+HCOO]-,adduct,+46.005479,formic acid / formate in mobile phase or matrix,5,sum,True,,,
+ACETATE,[M+CH3COO]-,adduct,+60.021129,acetic acid / acetate buffer or contamination,5,search,True,,,
+CO2_CLUSTER,[M+CO2-H]-,cluster,+43.989829,CO2 / carbonate background,3,search,True,,,Exact +43.989829 Da relative to [M-H]-; nominally +44.
+SO3_CLUSTER,[M+SO3-H]-,cluster,+79.956815,sulfite / sulfate-related residue,3,search,True,,,Exact +79.956815 Da relative to [M-H]-; one interpretation of nominal +80.
+PHOSPHITE,[M+H2PO3]-,adduct,+81.981981,phosphite / phosphorus-containing residue,3,search,True,,,Exact +81.981981 Da relative to [M-H]-; separated from SO3.
+NITRATE,[M+NO3]-,adduct,+62.995643,nitric acid / nitrate residue,3,search,True,,,
+CHLORIDE35,[M+35Cl]-,adduct,+35.976678,chloride / hydrochloric acid / salts,4,search,True,,CHLORIDE37,37Cl is used as isotopic support.
+PHOSPHATE,[M+H2PO4]-,adduct,+97.976896,phosphate buffer / phosphate residue,3,search,True,,,
+NA_REPLACE,[M+Na-2H]-,substitution,+21.981942,sodium contamination / glassware / solvent,3,search,True,,,
+K_REPLACE,[M+K-2H]-,substitution,+37.955882,potassium contamination / salts,2,search,True,,,
+FORMATE_2H2O,[M+HCOO+2H2O]-,cluster,+82.026609,water-rich mobile phase / low source temperature,2,search,True,,,
+DIMER,[2M-H]-,dimer,depends on M,high analyte concentration / low source temperature,2,evidence,False,,,Evidence only; dimer response is not summed into monomer area by default.
+NET_METHYL,[M+CH2-H]- (net +14 hypothesis),transformation,+14.015650,rare in-source methylation / line chemistry,1,evidence,False,,,
+NET_ETHYL,[M+C2H4-H]- (net +28 hypothesis),transformation,+28.031300,rare in-source ethylation / line chemistry,1,evidence,False,,,
+BROMIDE_ADDUCT79,[M+79Br]-,adduct,+79.926163,bromide in matrix / salts,2,search,True,,BROMIDE_ADDUCT81,
+BR_LOSS_FROM_MH,[M-H-Br]-,fragment,-78.918338,in-source C-Br cleavage,4,evidence,False,Br,,Target-specific debrominated fragment; not summed.
+HBR_LOSS_FROM_MH,[M-H-HBr]-,fragment,-79.926163,in-source neutral HBr loss,3,evidence,False,Br,,Alternative bromine-loss hypothesis; evidence only and never summed by default.
+BR_ANION79,79Br- diagnostic,diagnostic,fixed diagnostic m/z,in-source fragmentation of organobromine compounds,5,evidence,False,Br,BR_ANION81,Fixed m/z 78.918886; coeluting 81Br- supports bromine-specific fragmentation.

@@ -1,0 +1,30 @@
+{
+  "release": "18.48.2-en.1",
+  "data_scope": "synthetic tests only",
+  "baseline_zip_sha256": "50ba61a53fe768648904214c086dbcd2633a147b6aea47b78a36ee8b5b0e1a0d",
+  "python": "3.13.5",
+  "platform": "Linux x86_64",
+  "packages": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "sklearn": "1.8.0",
+    "rdkit": "2025.09.4",
+    "openpyxl": "3.1.5",
+    "PIL": "12.3.0",
+    "matplotlib": "3.10.8"
+  },
+  "unit_tests": 254,
+  "source_checks_without_raw": 28,
+  "model_numeric_fields_compared": 3357,
+  "numeric_mismatches": 0,
+  "rdkit_and_model_backend": true,
+  "gui_tabs": 10,
+  "missing_module_test": "Intentional missing_xyz fixture is expected, not a release failure",
+  "not_tested": [
+    "Real experimental data",
+    "Windows .NET/fisher_py RAW reading",
+    "Frozen Windows executable",
+    "Microsoft Excel or WPS",
+    "Original pinned Python/scikit-learn/SciPy installation"
+  ]
+}

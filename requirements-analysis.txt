@@ -1,0 +1,12 @@
+# Non-RAW dependencies for source tests and table/model-only workflows.
+# Scientific version constraints are the same as requirements.txt.
+numpy>=1.21,<2.0
+matplotlib
+python-docx
+reportlab
+pypdf
+openpyxl>=3.0,<4
+Pillow>=8
+scikit-learn==1.3.2
+scipy>=1.7,<1.11
+rdkit
